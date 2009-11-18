@@ -1,0 +1,16 @@
+- form_for(@user_session) do |f|
+  = f.error_messages :message => ""
+
+  %p
+    = f.label :email, t("user.form.email")
+    %br
+    = f.text_field :email
+
+  %p
+    = f.label :password, t("user.form.password")
+    %br
+    = f.password_field :password
+
+  %p= f.submit t("user.login_button")
+
+%p= link_to t("user.lost_password"), lost_password_path

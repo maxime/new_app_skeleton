@@ -1,0 +1,10 @@
+%h1=t "lost_password.title"
+
+%p= t "lost_password.instructions"
+
+- form_tag password_resets_path do
+  %p
+    %label{:for => 'email'}=t "lost_password.email"
+    %br
+    = text_field_tag "email"
+  %p= submit_tag t("lost_password.button")

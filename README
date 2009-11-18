@@ -1,0 +1,10 @@
+== New Application Skeleton
+
+This is an empty app that does nothing but user registration, login, lost password, etc.
+
+* Authlogic enabled
+* Haml enabled
+* User, User Session Model
+* Different user types
+* Login, Registration, Lost password, activation
+* Empty homepage

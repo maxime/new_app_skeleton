@@ -1,0 +1,19 @@
+- form_for(@user) do |f|
+  = f.error_messages :message => ""
+
+  %p
+    = f.label :email, t("user.form.email")
+    %br
+    = f.text_field :email
+
+  %p
+    = f.label :password, t("user.form.password")
+    %br
+    = f.password_field :password
+
+  %p
+    = f.label :password_confirmation, t("user.form.password_confirmation")
+    %br
+    = f.password_field :password_confirmation
+
+  %p= f.submit t("user.new.button")

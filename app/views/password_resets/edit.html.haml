@@ -1,0 +1,15 @@
+%h1=t 'change_my_password.title'
+
+- form_for @user, :url => password_reset_path, :method => :put do |f|
+  = f.error_messages
+  %p
+    = f.label :password, t('change_my_password.password')
+    %br
+    = f.password_field :password
+
+  %p
+    = f.label :password_confirmation, t('change_my_password.password_confirmation')
+    %br
+    = f.password_field :password_confirmation
+
+  %p= f.submit t('change_my_password.button')

@@ -1,0 +1,79 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  title: "New Application"
+
+  login_success: "Login success."
+  logout_success: "Logout sucess."
+
+  you_must_be_logged_in_to_access_this_page: "You must be logged in to access this page."
+  you_must_be_logged_out_to_access_this_page: "You must be logged out to access this page."
+
+  layout:
+    login: "Login"
+    logout: "Logout"
+    sign-up: "Sign up"
+
+  user:
+    form:
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+    new:
+      button: "Sign up"
+      created: "Registration successful."
+    edit:
+      updated: "User updated."
+    error:
+      cant_be_changed_by_you: "can't be changed by yourself"
+      is_incorrect: "is incorrect"
+    deleted: "User deleted."
+    login_button: "Login"
+    lost_password: "Lost password?"
+
+  activation:
+    success: "Your account have been activated!"
+    error: "An error occured while activating your account."
+
+  activation_instructions:
+    subject: "Activation Instructions"
+    click_the_url: "Click the URL below to activate your account:"
+
+  activation_confirmation:
+    subject: "Activation Complete"
+    your_account_is_activated: "Your account is now activated."
+
+# Lost Password
+  lost_password:
+    title: "Forgot Password"
+    instructions: "Fill out the form below and instructions to reset your password will be emailed to you:"
+    email: "Email:"
+    button: "Reset my password"
+    email_sent_notification: "Instructions to reset your password have been emailed to you. Please check your email."
+    no_user_matching_email_found: "No user was found with that email address"
+    password_successfully_updated: "Password successfully updated"
+    invalid_url: "We're sorry, but we could not locate your account. If you are having issues try copying and pasting the URL from your email into your browser or restarting the reset password process."
+
+  lost_password_email:
+    subject: "Password Reset Instructions"
+    title: "A request to reset your password has been made."
+    ignore_if_not_you: "If you did not make this request, simply ignore this email."
+    click_the_link: "If you did make this request just click the link below:"
+    try_to_copy_paste: "If the above URL does not work try copying and pasting it into your browser."
+    if_problem_contact_us: "If you continue to have problem please feel free to contact us."
+
+# Change my password
+  change_my_password:
+    title: 'Change My Password'
+    password: 'Password'
+    password_confirmation: 'Password confirmation'
+    button: 'Update my password and log me in'
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: "There is already an account registered with this email address. Please try again"

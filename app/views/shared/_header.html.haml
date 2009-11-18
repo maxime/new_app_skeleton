@@ -1,0 +1,10 @@
+- if logged_in?
+  %p
+    Logged in as
+    =h current_user.email
+  %p= link_to t('layout.logout'), logout_path
+- else
+  %p
+    = link_to t('layout.login'), login_path
+    |
+    = link_to t('layout.sign-up'), signup_path
