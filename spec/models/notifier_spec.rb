@@ -13,7 +13,7 @@ describe Notifier do
     end
 
     it "should contain the user's message in the mail body" do
-      @email.should have_text(/http:\/\/sofa-app.com\/password_resets\/perishable_token\/edit/)
+      @email.should have_text(/http:\/\/new_app_skeleton-app.com\/password_resets\/perishable_token\/edit/)
     end
 
     it "should have the correct subject" do
@@ -33,7 +33,7 @@ describe Notifier do
     end
 
     it "should contain the link to activate the account" do
-      @email.should have_text(/http:\/\/sofa-app.com\/activate\/perishable_token/)
+      @email.should have_text(/http:\/\/new_app_skeleton-app.com\/activate\/perishable_token/)
     end
 
     it "should have the correct subject" do
